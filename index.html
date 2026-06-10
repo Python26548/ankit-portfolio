@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ankit Dhiman | Python & Web Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="progress"></div>
+
+    <nav id="nav">
+        <div class="bar-bg"></div>
+        <a class="brand" href="#">ANKIT.PY</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- full-screen mobile menu -->
+    <div id="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="mm-meta">ankitdhiman2654@gmail.com<br />+91 83072-42236</div>
+    </div>
+
+    <!-- ════ Scroll-drawn SVG spine ════ -->
+    <svg id="spine" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="spineGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#8b5cf6" />
+                <stop offset=".5" stop-color="#22d3ee" />
+                <stop offset="1" stop-color="#f472b6" />
+            </linearGradient>
+        </defs>
+        <path class="ghost" id="ghostPath" />
+        <path class="draw" id="drawPath" />
+        <circle class="dot-head" id="dotHead" r="6" fill="#22d3ee" />
+    </svg>
+
+    <!-- ════ Hero ════ -->
+    <header class="hero">
+        <p class="kicker">Systems Architect & Developer</p>
+        <h1>
+            <span class="row"><span>From Clean</span></span>
+            <span class="row"><span class="outline">Logic to</span></span>
+            <span class="row"><span class="grad gradd">Automation</span></span>
+        </h1>
+        <p class="sub">Python & Web Developer crafting high-performance backend systems and elegant interfaces. Scroll
+            to follow the path.</p>
+
+        <div class="orbits">
+            <svg viewBox="0 0 400 400">
+                <g class="ring">
+                    <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(139,92,246,.35)" stroke-width="1"
+                        stroke-dasharray="4 10" />
+                    <circle cx="380" cy="200" r="5" fill="#8b5cf6" />
+                </g>
+                <g class="ring ring2">
+                    <circle cx="200" cy="200" r="130" fill="none" stroke="rgba(34,211,238,.3)" stroke-width="1"
+                        stroke-dasharray="2 8" />
+                    <circle cx="330" cy="200" r="4" fill="#22d3ee" />
+                </g>
+                <g class="ring ring3">
+                    <circle cx="200" cy="200" r="80" fill="none" stroke="rgba(244,114,182,.3)" stroke-width="1" />
+                    <circle cx="280" cy="200" r="3" fill="#f472b6" />
+                </g>
+                <circle cx="200" cy="200" r="8" fill="url(#spineGrad)" />
+            </svg>
+        </div>
+
+        <div class="scroll-cue">
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+                <rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" />
+                <circle cx="8" cy="8" r="2" fill="currentColor" />
+            </svg>
+            Scroll
+        </div>
+    </header>
+
+    <!-- ════ Marquee ════ -->
+    <div class="marquee">
+        <div class="track" id="mq">
+            <span>Python</span><span class="alt">Automation</span><span>Web Scraping</span><span class="alt">Full
+                Stack</span><span>Django</span><span class="alt">JavaScript</span><span>APIs</span><span
+                class="alt">Data Extraction</span>
+        </div>
+    </div>
+
+    <!-- ════ About ════ -->
+    <section id="about">
+        <div class="wrap about-grid">
+            <div class="rv-l">
+                <div class="label">01 — Profile</div>
+                <h2 class="h2">Where clean logic meets modern design</h2>
+                <p>I am a Python and Web Developer currently pursuing an M.Sc. in Computer Science. I specialize in
+                    automation, data extraction, backend development, and creating functional, secure, user-friendly web
+                    applications.</p>
+                <div class="stats">
+                    <div class="stat rv"><b data-count="20">0</b><small>Projects</small></div>
+                    <div class="stat rv"><b data-count="3">0</b><small>Years Coding</small></div>
+                    <div class="stat rv"><b data-count="100">0</b><small>% Dedication</small></div>
+                </div>
+            </div>
+            <div class="rv-r portrait-wrap">
+                <div class="frame"></div>
+                <div class="portrait"><img class="plx" data-speed="12" alt="Portrait" src="assets/images/ankit2.jpeg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ Projects ════ -->
+    <section id="projects">
+        <div class="proj-head rv">
+            <div class="label">02 — Selected Works</div>
+            <h2 class="h2">Projects that<br />tell a story</h2>
+        </div>
+
+        <div class="proj">
+            <div class="proj-inner">
+                <div>
+                    <div class="proj-num">01</div>
+                    <div class="proj-media"><img class="plx" data-speed="16" alt="Data scraping dashboard"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXgnrFDztP9Iw_lSsbiG1aeGElfedOmSbMmTzJPZTYCZuvSzh6XIPNiGl0X_6bcnu124Csg6vDMC1KNvjN0DhVRP3gqEJW9V2att-H-xaOQeNViS53dvNlndNUO8nE3Rx0gbtAM3m8rRn21ipT2i_UNgUgDO0H_dAh-hn9XmTYmMzstJHSS_Q8_DgyUoMYdS4Mqsk_a3Y1ziZq9tshDgsMuWmmIhEM2n9paYsJwJGqrNsXaew36Gp_qmvIibJGzMqSU6ORrzieGN9B" />
+                        <div class="glowbar"></div>
+                    </div>
+                </div>
+                <div class="proj-info rv">
+                    <span class="tagline">Python // Automation</span>
+                    <h3>Automated Multi-Website Data Scraping System</h3>
+                    <p>High-efficiency data extraction engine capable of processing thousands of requests across varied
+                        DOM structures with intelligent retry logic and parallel workers.</p>
+                    <div class="proj-tags"><span>Python</span><span>Scrapy</span><span>Async</span></div>
+                    <a class="proj-link" href="#"><span class="arrow">→</span>View Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proj">
+            <div class="proj-inner">
+                <div>
+                    <div class="proj-num">02</div>
+                    <div class="proj-media"><img class="plx" data-speed="16" alt="Cleaning service website"
+                            src="assets/images/project-1.png" />
+                        <div class="glowbar"></div>
+                    </div>
+                </div>
+                <div class="proj-info rv">
+                    <span class="tagline">Web Development // Client</span>
+                    <h3>Cleaning Service</h3>
+                    <p>A conversion-focused service platform featuring real-time booking, automated scheduling, and a
+                        polished responsive experience that drives engagement.</p>
+                    <div class="proj-tags"><span>HTML/CSS</span><span>JS</span><span>Booking</span></div>
+                    <a class="proj-link" href="#"><span class="arrow">→</span>View Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proj">
+            <div class="proj-inner">
+                <div>
+                    <div class="proj-num">03</div>
+                    <div class="proj-media"><img class="plx" data-speed="16" alt="Logistics dashboard"
+                            src="assets/images/project-2.png" />
+                        <div class="glowbar"></div>
+                    </div>
+                </div>
+                <div class="proj-info rv">
+                    <span class="tagline">Web Development // Client</span>
+                    <h3>L&N Transportation</h3>
+                    <p>Enterprise-grade logistics management portal focusing on shipment tracking, document automation,
+                        and operational clarity at scale.</p>
+                    <div class="proj-tags"><span>Dashboard</span><span>Logistics</span><span>Automation</span></div>
+                    <a class="proj-link" href="#"><span class="arrow">→</span>View Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="proj">
+            <div class="proj-inner">
+                <div>
+                    <div class="proj-num">04</div>
+                    <div class="proj-media"><img class="plx" data-speed="16" alt="Interactive scratch card"
+                            src="assets/images/lumiaprint.png" />
+                        <div class="glowbar"></div>
+                    </div>
+                </div>
+                <div class="proj-info rv">
+                    <span class="tagline">Web Development // Interactive</span>
+                    <h3>Lumia Print</h3>
+                    <p> business website for printings service</p>
+                    <div class="proj-tags"><span>HTML/CSS</span><span>JS</span><span>UX</span></div>
+                    <a class="proj-link" href="#"><span class="arrow">→</span>View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ Contact ════ -->
+    <section class="contact" id="contact">
+        <div class="wrap">
+            <div class="label rv">03 — Collaboration</div>
+            <h2 class="big rv">Let's build<br /><a href="mailto:ankitdhiman2654@gmail.com">something great</a></h2>
+            <div class="contact-meta rv">
+                <div><small>Email</small><a href="mailto:ankitdhiman2654@gmail.com">ankitdhiman2654@gmail.com</a></div>
+                <div><small>Phone</small><a href="tel:+918307242236">+91 83072-42236</a></div>
+                <div><small>Status</small><span style="color:var(--a2)">● Available for freelance</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2024 Ankit Dhiman — Engineered for precision</span>
+        <div class="fl">
+            <a href="https://github.com/python26548" target="_blank">GitHub</a>
+            <!-- <a href="#">LinkedIn</a> -->
+            <a href="https://instagram.com/ankitt.dhiman" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
